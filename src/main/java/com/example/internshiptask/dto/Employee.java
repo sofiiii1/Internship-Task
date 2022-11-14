@@ -11,11 +11,12 @@ import org.springframework.data.relational.core.mapping.Table;
 import java.util.Date;
 
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 @Table("employee")
 public class Employee {
     @Id
-    private Long employeeId;
+    private Integer employeeId;
     private String firstName;
     private String lastName;
     private String department;

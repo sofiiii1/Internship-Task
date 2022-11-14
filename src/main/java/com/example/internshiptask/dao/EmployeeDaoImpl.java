@@ -37,7 +37,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
 
     private RowMapper<Employee> employeeRowMapper=(rs,rowNum)->{
         Employee employee=new Employee();
-        employee.setEmployeeId(rs.getLong("employee_id"));
+        employee.setEmployeeId(rs.getInt("employee_id"));
         employee.setFirstName(rs.getString("first_name"));
         employee.setLastName(rs.getString("last_name"));
         employee.setDepartment(departmentDao.getNameById(rs.getLong("department_id")));
