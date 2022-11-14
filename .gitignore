@@ -1,6 +1,6 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -33,7 +33,9 @@ build/
 .vscode/
 
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
-.mvn/wrapper
+!.mvn/wrapper
 mvnw.cmd
-mvnw
+/mvnw
+/.mvn/
+pom.xml.*
+.mvn/wrapper
